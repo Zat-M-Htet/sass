@@ -1,0 +1,34 @@
+$primary-color: #333;
+
+
+
+
+.brand{
+    height: auto;
+}
+
+.brand-image{
+    height: 100%;
+}
+
+nav{
+    background-color: grey;
+    ul{
+      margin: auto;
+      padding: auto;
+      li{
+        border-radius: 5px;
+        border: 1px solid black;
+        a{
+           color: $primary-color;
+        }
+        a:hover{
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+    ul:hover{
+      transform: rotate(45deg);
+    }
+  }

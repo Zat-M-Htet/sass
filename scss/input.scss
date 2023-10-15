@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Kanit:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+
+//customize color
+// $primary: #581b98;
+// $secondary: #364f6b;
+// $success: #086972;
+// $danger: #fc5185;
+
+//map (like loop)
+$theme-colors: (
+  "primary": #581b98,
+  "zmh": gold,
+//   "secondary": $secondary,
+//   "success": $success,
+//   "info": $info,
+//   "warning": $warning,
+  "danger": red,
+//   "light": $light,
+//   "dark": $dark,
+);
+
+$body-bg: rgb(204, 189, 189);
+
+//customize button
+$btn-border-radius: 0px;
+$btn-font-weight: bolder;
+$btn-padding-x: 30px;
+// $input-btn-padding-x : 50px;
+// $btn-box-shadow : 5px 5px 3px black !important;
+
+$display-font-family: "Josefin Sans", sans-serif;
+$headings-font-family: "Kanit", sans-serif;
+$font-family-sans-serif: "Playfair Display", serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
