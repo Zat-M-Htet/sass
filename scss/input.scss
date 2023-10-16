@@ -10,21 +10,38 @@
 $theme-colors: (
   "primary": #581b98,
   "zmh": gold,
-//   "secondary": $secondary,
-//   "success": $success,
-//   "info": $info,
-//   "warning": $warning,
+  //   "secondary": $secondary,
+  //   "success": $success,
+  //   "info": $info,
+  //   "warning": $warning,
   "danger": red,
-//   "light": $light,
-//   "dark": $dark,
+  //   "light": $light,
+  //   "dark": $dark,,,
+  );
+
+
+  // $border-radius: 100px;
+  $spacer: 2rem;  
+  
+// $spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 6,
+  20: $spacer * 12,
 );
 
-$body-bg: rgb(204, 189, 189);
+// $body-bg: rgb(204, 189, 189);
+
 
 //customize button
-$btn-border-radius: 0px;
+// $btn-border-radius: 0px;
 $btn-font-weight: bolder;
-$btn-padding-x: 30px;
+// $btn-padding-x: 30px;
 // $input-btn-padding-x : 50px;
 // $btn-box-shadow : 5px 5px 3px black !important;
 
@@ -33,3 +50,21 @@ $headings-font-family: "Kanit", sans-serif;
 $font-family-sans-serif: "Playfair Display", serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@include media-breakpoint-only(sm) {
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: $primary;
+    border-radius: 50%;
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: $primary;
+  }
+}
